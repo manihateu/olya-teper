@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { PDFWorker } from 'pdfjs-dist';
 import { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import "@/styles/globals.css"
+
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
   import.meta.url,
