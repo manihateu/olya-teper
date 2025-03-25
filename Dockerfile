@@ -9,6 +9,4 @@ COPY . .
 
 EXPOSE 25565
 
-RUN npx prisma generate
-
-CMD ["yarn", "run", "dev"]
+CMD ["npx", "prisma", "generate", "&&", "yarn", "run", "dev"]
