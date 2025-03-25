@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 25565
 
-CMD ["npx", "prisma", "generate", "&&", "yarn", "run", "dev"]
+CMD ["yarn", "run", "start:migrate:prod"]
