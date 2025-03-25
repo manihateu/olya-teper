@@ -6,7 +6,6 @@ const nextConfig = {
                 canvas: "./empty-module.js"
             }
         },
-        esmExternals: "loose",
     },
 };
 
