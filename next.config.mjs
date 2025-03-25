@@ -5,7 +5,8 @@ const nextConfig = {
             resolveAlias: {
                 canvas: "./empty-module.js"
             }
-        }
+        },
+        esmExternals: "loose",
     },
 };
 
