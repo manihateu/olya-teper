@@ -8,7 +8,6 @@ services:
     container_name: olya-app
     restart: always
     volumes:
-      - ./src:/app/src
       - /app/node_modules
       - ./public:/app/public # Монтируем папку для статики
     ports:
