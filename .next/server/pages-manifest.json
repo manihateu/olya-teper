@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/[id]": "pages/[id].html",
+  "/api/books/[id]": "pages/api/books/[id].js",
+  "/api/books": "pages/api/books.js",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.html",
+  "/api/books/upload": "pages/api/books/upload.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
