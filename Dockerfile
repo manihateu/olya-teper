@@ -2,14 +2,9 @@ FROM node:23
 
 WORKDIR /app
 
-RUN chown -R node:node /app
-USER node
-
 COPY package.json yarn.lock ./
-RUN yarn install
+RUN yarn install --frozen-lockfile --production
 COPY . .
-
-RUN ls -laR /app
 
 RUN npx prisma generate
 
