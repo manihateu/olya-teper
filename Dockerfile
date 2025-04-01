@@ -9,6 +9,8 @@ COPY . .
 
 RUN npx prisma generate
 
+RUN yarn build
+
 EXPOSE 25565
 
 CMD ["yarn", "run", "start:migrate:prod"]

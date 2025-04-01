@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start --port 25565",
     "lint": "next lint",
-    "start:migrate:prod": "prisma generate && next dev --turbopack --port 25565"
+    "start:migrate:prod": "prisma generate && next start --turbopack --port 25565"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
