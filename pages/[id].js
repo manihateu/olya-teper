@@ -1,15 +1,12 @@
 'use client';
 import { useRouter } from 'next/router';
-import { PDFWorker } from 'pdfjs-dist';
 import { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 export default function BookPage() {
+  console.log(pdfjs.GlobalWorkerOptions.workerSrc)
   const router = useRouter();
   const { id } = router.query;
 
