@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 25565
 
-CMD ["yarn", "run", "start:migrate:prod"]
+CMD ["yarn", "run", "start"]
