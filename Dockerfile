@@ -2,9 +2,6 @@ FROM node:23
 
 WORKDIR /app
 
-RUN chown -R node:node /app
-USER node
-
 COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
