@@ -17,5 +17,3 @@ services:
       - DATABASE_URL=postgres://neondb_owner:npg_Xotmfb9lNFS6@ep-odd-silence-a2kevyft-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require
     extra_hosts:
       - "host.docker.internal:host-gateway"
-    depends_on:
-      - postgres
