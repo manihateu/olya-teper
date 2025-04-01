@@ -3,7 +3,7 @@ FROM node:23
 WORKDIR /app
 
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --production=false
 COPY . .
 
 RUN npx prisma generate
